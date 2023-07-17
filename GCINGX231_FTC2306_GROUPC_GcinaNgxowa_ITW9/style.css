@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lora', serif; 
+}
+
+
+body{
+    background: rgb(20, 20, 29);
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(254, 254, 255, 0.671);
+
+}
+
+.resume{
+    width: 1000px;
+    height: auto;
+    display: flex;
+    margin: 50px auto ;
+}
+
+.resume .left_side{
+    width: 600px;
+    background: rgb(70, 70, 107);
+    
+}
+
+.resume .left_side .resume_content{
+    padding: 0 20px;
+}
+
+.resume .title{
+    margin-bottom: 30px;
+}
+
+.resume .resume_item{
+    padding: 25px 0;
+    border-bottom: 3px solid white;
+}
+
+.resume .left_side .resume_item:last-child
+{
+border-bottom: 0px;
+}
+
+.resume .left_side ul li {
+    display: flex;
+    margin-bottom: 50px ;
+}
+
+.resume .left_side ul li:last-child{
+    margin-bottom: 0px;
+}
+
+.resume .left_side ul li .icon{
+    width: 35px;
+    height: 35px;
+    color: rgba(0, 196, 196, 0.575);
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 15px;
+    position: relative;
+}
+
+.resume .icon{
+    position: absolute;
+    top: 50%;
+}
+
+.resume .left_side .resume_skills ul li .data{
+color: rgba(0, 196, 196, 0.575);
+justify-content: space-between;
+}
+
+.resume .left_side .resume_skills ul li .skill_name{
+    width: 140%;
+}
+
+.resume .left_side .resume_skills ul li .skill_level{
+    width: 100%;
+    top: 11px;
+    margin: 0 5px;
+    height: 6px;
+    background: #009fd0;
+    position: relative;
+}
+
+.resume .left_side .resume_skills ul li .skill_per{
+    width: 15%;
+}
+
+.resume .left_side .resume_skills ul li .skill_level span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: white;
+
+}
+
+.resume .right_side{
+    width: 600px;
+    background: #685c5c;
+    padding: 30px
+
+}
+
+
+header .section{
+    background: #35282838;
+}
+
+.img-container{
+    background-image: url(bg.jpg);
+    min-height: 70%;
+    background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+
+}
+
+.btn{
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    padding: 10px;
+    border: 4px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    
+}
+
+.btn:hover,.btn:active{
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+
+}
+
+@media (max-width: 1000px) {
+  .resume {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  } 
+  .resume_content ul {
+    grid-template-columns: repeat(2.1fr);
+  }
+}
+ 
+@media (max-width: 600px) {
+    .resume_item .resume_skills{
+        flex-direction: column;   
+    }
+    .resume_item .resume_skills ul{
+        margin-bottom: 5px;
+    }
+}
+
